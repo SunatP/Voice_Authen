@@ -107,10 +107,10 @@ def add_user():
      
     #Voice authentication
     FORMAT = pyaudio.paInt16
-    CHANNELS = 2
-    RATE = 44100
-    CHUNK = 1024
-    RECORD_SECONDS = 3
+    CHANNELS = 2 # Mono or Stereo of input
+    RATE = 44100 # Frequency
+    CHUNK = 1024 # Chunk size file
+    RECORD_SECONDS = 3 # Maximum time for records
     
     source = "./voice_database/" + name
     
