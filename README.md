@@ -252,10 +252,10 @@ ___
 def recognize():
     # Voice Authentication
     FORMAT = pyaudio.paInt16
-    CHANNELS = 2
-    RATE = 44100
-    CHUNK = 1024
-    RECORD_SECONDS = 3
+   CHANNELS = 2 # Mono or Stereo of input
+    RATE = 44100 # Can use 44100 or 48000 Frequency depends on each device
+    CHUNK = 1024 # Chunk size file can reach up to 2048
+    RECORD_SECONDS = 3 # Maximum Time for recognize
     FILENAME = "./test.wav"
 
     audio = pyaudio.PyAudio()
