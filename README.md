@@ -8,7 +8,9 @@ ___
 ___
 
  **Import the dependencies**
- ```
+
+ ```python
+
 import numpy as np
 import os
 import glob
@@ -39,7 +41,7 @@ if os.path.exists('./user_database/userLists.csv'):
 
 **MFCC features and Extract delta of the feature vector**
 
-```
+```python
 #Calculate and returns the delta of given feature vector matrix
 def calculate_delta(array):
     rows,cols = array.shape
@@ -86,7 +88,7 @@ ___
   
 **Adding a New User's voice**
 
-```
+```python
 def add_user():
     
     name = input("Enter Name:")
@@ -193,7 +195,7 @@ ___
  
 **Check User**
 
-```
+```python
 # checks a registered user from database
 def check_user():
     name = input("Enter name of the user:")
@@ -210,7 +212,7 @@ ___
 
 **Delete User**
 
-```
+```python
 # deletes a registered user from database
 def delete_user():
     name = input("Enter name of the user:")
@@ -234,7 +236,7 @@ ___
 
  **Voice Authentication**
 
- ```
+ ```python
 def recognize():
     # Voice Authentication
     FORMAT = pyaudio.paInt16
@@ -316,4 +318,3 @@ recognize()
   
   Load all the pre-trained gmm models and passes the new extracted MFCC vector into the gmm.score(vector) function checking with each model one-by-one and sums the scores to calculate log_likelihood of each model. Takes the argmax value from the log_likelihood which provides the prediction of the user with highest prob distribution.
   ___
-  
