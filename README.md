@@ -4,6 +4,18 @@
 Voice Biometrics Authentication using GMM
 ___
 
+## What we need?
+
+**Python 3.X** <br>
+PyAudio<br>
+GaussianMixture<br>
+Scikit-Learn<br>
+IPython<br>
+Numpy
+
+___
+
+
 ## How it works?
 ___
 
